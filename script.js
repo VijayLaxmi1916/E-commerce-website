@@ -24,7 +24,7 @@ document.getElementById('start-btn')?.addEventListener('click', (e) => {
   e.stopPropagation();
   setTimeout(() => {
     showStep(1);
-  }, 1000);
+  }, 5000);
 });
 
 // Auto next when clicking option (q1 to q3)
