@@ -24,7 +24,7 @@ document.getElementById('start-btn')?.addEventListener('click', (e) => {
   e.stopPropagation();
   setTimeout(() => {
     showStep(1);
-  }, 2000);
+  }, 500);
 });
 
 // Auto next when clicking option (q1 to q3)
@@ -34,7 +34,9 @@ document.getElementById('start-btn')?.addEventListener('click', (e) => {
     container.querySelectorAll('.option').forEach(option => {
       option.addEventListener('click', (e) => {
         e.stopPropagation();
-        showStep(idx + 2);
+        setTimeout(() => {
+          showStep(idx + 2);
+        }, 500);
       });
     });
   }

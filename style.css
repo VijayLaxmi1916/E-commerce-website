@@ -168,11 +168,10 @@ p.step {
 .option.visited {
     background-color: white !important;
 }
-/* .option input[type="radio"]:checked + span {
-  background-color: white;
-  color: green;
-  border: 2px solid green;
-} */
+.option:active{
+    background-color: #ffffff;
+    transform: translateY(2px);
+}
 button {
     --clamp-22-30: clamp(1.375rem, 1.1732rem + 0.8772vw, 1.875rem);
     font-size: var(--clamp-22-30);
