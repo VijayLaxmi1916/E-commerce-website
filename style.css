@@ -191,7 +191,7 @@ button:hover {
 }
 #start-btn:active {
   background-color: #e0d281;
-  transform: translateY(9px);
+  transform: translateY(5px);
 }
 .mindful-heading {
     max-width: 56%;
