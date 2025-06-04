@@ -1,0 +1,338 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background: #73a553;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #212121;
+    font-size: clamp(12px, 2vw, 18px);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.card {
+    background: #73a553;
+    width: 100%;
+    max-width: 650px;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 25px rgb(33 33 33 / 8%);
+    font-weight: 600;
+    outline-offset: 4px;
+}
+
+/* Step screen base */
+.step-screen {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+/* Show the current step */
+.step-screen[style*="display: flex"] {
+    display: flex !important;
+}
+
+/* Focus style */
+button:focus,
+input:focus {
+    outline: 3px solid #73a553;
+    outline-offset: 3px;
+}
+
+/* Start Screen */
+#start-screen h3 {
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.small-title {
+    font-size: clamp(14px, 1.5vw, 24px);
+    color: #444;
+    font-weight: 400;
+}
+
+.highlight {
+    color: #73a553;
+    font-weight: 700;
+    font-size: clamp(22px, 3vw, 32px);
+}
+
+#start-screen h1 {
+    font-size: clamp(35px, 7vw, 55px);
+    line-height: 1.1;
+    text-align: center;
+    margin: 0;
+}
+
+.subtext {
+    font-weight: 500;
+    font-size: clamp(12px, 1.5vw, 18px);
+    text-align: center;
+    margin: 15px 0 30px 0;
+}
+
+#start-btn {
+    background-color: #73a553;
+    color: white;
+    border: none;
+    padding: 18px 60px;
+    font-size: clamp(14px, 2vw, 18px);
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#start-btn:hover,
+#start-btn:focus {
+    background-color: #5f863f;
+}
+
+/* Footer */
+.footer {
+    margin-top: auto;
+    font-weight: 700;
+    font-size: clamp(10px, 1vw, 12px);
+    color: #444;
+    text-align: center;
+}
+
+.as-seen {
+    margin-right: 15px;
+}
+
+.bbc {
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #555;
+    margin-right: 5px;
+    user-select: none;
+}
+
+/* Questions */
+
+.step {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: clamp(20px, 3vw, 24px);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+nav[aria-label^="Answer choices"] {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 400px;
+}
+
+button.option {
+    background-color: #73a553;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: clamp(14px, 1.8vw, 16px);
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+button.option[aria-pressed="true"],
+button.option:hover,
+button.option:focus {
+    background-color: #5f863f;
+    outline: 3px solid #5f863f;
+    outline-offset: 2px;
+}
+
+/* Form Screen */
+
+#form-screen {
+    width: 100%;
+    max-width: 400px;
+}
+
+.final-text {
+    font-weight: 900;
+    font-size: clamp(30px, 6vw, 60px);
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.1;
+    color: #73a553;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: 700;
+    font-size: clamp(14px, 1.5vw, 18px);
+    margin-bottom: 4px;
+    display: block;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    padding: 10px 15px;
+    border: 2px solid #73a553;
+    border-radius: 30px;
+    font-size: clamp(14px, 1.5vw, 18px);
+    font-weight: 600;
+    transition: border-color 0.3s ease;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus {
+    border-color: #5f863f;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #73a553;
+    color: white;
+    font-weight: 700;
+    font-size: clamp(14px, 2vw, 18px);
+    padding: 15px 0;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    background-color: #5f863f;
+}
+
+.error {
+    color: #c1272d;
+    font-size: clamp(12px, 1vw, 14px);
+    height: 1.2em;
+}
+
+/* Mindful Screen */
+
+#mindful-screen {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.slide-6-content {
+    flex: 1;
+    color: #73a553;
+    font-weight: 600;
+    font-size: clamp(20px, 3vw, 30px);
+    padding-right: 20px;
+    line-height: 1.3;
+}
+
+.slide-6-text {
+    font-weight: 500;
+    font-size: clamp(14px, 2vw, 18px);
+    color: #2f4a3f;
+    margin-top: 15px;
+}
+
+.image-container img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Last post screen */
+
+#last-post-screen {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
+
+.slide-7-image img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.slide-7-content {
+    max-width: 300px;
+    color: #2f4a3f;
+    font-weight: 600;
+}
+
+.help-text {
+    font-size: clamp(16px, 2vw, 22px);
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.bottom-section a {
+    color: #73a553;
+    text-decoration: none;
+}
+
+.bottom-section a:hover,
+.bottom-section a:focus {
+    text-decoration: underline;
+}
+
+.line {
+    width: 60px;
+    height: 3px;
+    background: #73a553;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+
+    #mindful-screen,
+    #last-post-screen {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .slide-6-content,
+    .slide-7-content {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .image-container img,
+    .slide-7-image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
