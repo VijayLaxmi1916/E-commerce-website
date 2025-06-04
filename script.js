@@ -46,7 +46,9 @@ document.getElementById('form-submit').addEventListener('click', function () {
   if (validateFormFields()) {
     // All fields are filled, go to next step
     console.log('Form is valid, going to next step...');
-    showStep(5);
+    setTimeout(() => {
+      showStep(5);
+    }, 500);
   } else {
     console.log('Form has errors.');
   }
@@ -91,32 +93,32 @@ if (phoneInput) {
 }
 
 
-  // Handle "SHOW ME" button click
-  // "SHOW ME" button
-  // document.getElementById('form-submit')?.addEventListener('click', function (e) {
-  //   e.stopPropagation();
-  //   showStep(5); // mindful screen
-  // });
+// Handle "SHOW ME" button click
+// "SHOW ME" button
+// document.getElementById('form-submit')?.addEventListener('click', function (e) {
+//   e.stopPropagation();
+//   showStep(5); // mindful screen
+// });
 
-  // // Entire card click (handles all steps)
-  document.querySelector('.card')?.addEventListener('click', (e) => {
-    const tag = e.target.tagName.toLowerCase();
-    if (['input', 'button', 'a', 'label'].includes(tag)) return;
+// // Entire card click (handles all steps)
+document.querySelector('.card')?.addEventListener('click', (e) => {
+  const tag = e.target.tagName.toLowerCase();
+  if (['input', 'button', 'a', 'label'].includes(tag)) return;
 
-    const currentId = steps[currentStepIndex];
+  const currentId = steps[currentStepIndex];
 
-    if (currentId === 'form-screen') {
-      if (validateFormFields()) {
-        showStep(5);
-      }
-    } else if (currentId === 'mindful-screen') {
-      showStep(6);
-    } else if (currentId === 'last-post-screen') {
-      showStep(0); // Restart
-    } else {
-      showStep(currentStepIndex + 1);
+  if (currentId === 'form-screen') {
+    if (validateFormFields()) {
+      showStep(5);
     }
-  });
+  } else if (currentId === 'mindful-screen') {
+    showStep(6);
+  } else if (currentId === 'last-post-screen') {
+    showStep(0); // Restart
+  } else {
+    showStep(currentStepIndex + 1);
+  }
+});
 
-  // Init
-  showStep(0);
+// Init
+showStep(0);

@@ -1,7 +1,4 @@
 :root {
-    --clamp-22-30: clamp(1.375rem, 1.1732rem + 0.8772vw, 1.875rem);
-    --clamp-16-20: clamp(1rem, 0.8667rem + 0.2667vw, 1.25rem);
-    --clamp-18-24: clamp(1.125rem, 0.9667rem + 0.5333vw, 1.5rem);
     --PineGlade: #ACD394;
     --Feijoa: #ACD690;
     --AstronautBlue: #004260;
@@ -78,8 +75,6 @@ small {
 }
 
 .subtext {
-    max-width: 54%;
-    width: 100%;
     margin-top: -4px;
 
 }
@@ -97,13 +92,9 @@ h1 {
     line-height: 124%;
     font-weight: 700;
     text-transform: uppercase;
-    max-width: 62%;
-    width: 100%;
 }
 
 h2 {
-    max-width: 70%;
-    width: 100%;
     font-size: 28px;
     color: #000000;
     margin-bottom: 20px;
@@ -168,13 +159,14 @@ p.step {
 .option.visited {
     background-color: white !important;
 }
-.option:active{
+
+.option:active {
     background-color: #ffffff;
     transform: translateY(2px);
 }
+
 button {
-    --clamp-22-30: clamp(1.375rem, 1.1732rem + 0.8772vw, 1.875rem);
-    font-size: var(--clamp-22-30);
+    font-size: 24px;
     font-weight: 600;
     margin-top: 15px;
     width: 250px;
@@ -188,13 +180,14 @@ button {
 button:hover {
     background-color: #e0d281;
 }
-#start-btn:active {
-  background-color: #e0d281;
-  transform: translateY(5px);
+
+#start-btn:active,
+#form-submit:active {
+    background-color: #e0d281;
+    transform: translateY(5px);
 }
+
 .mindful-heading {
-    max-width: 56%;
-    width: 100%;
     font-size: 40px;
     color: #023C4E;
     line-height: 48px;
@@ -271,8 +264,8 @@ label {
 }
 
 .final-text {
-    max-width: 70%;
-    width: 100%;
+    /* max-width: 70%;
+    width: 100%; */
     font-size: 40px;
     color: #701D2F;
     font-weight: bold;
@@ -358,14 +351,10 @@ input[type="radio"] {
 
 @media screen and (max-width: 1440px),
 (max-width: 1317px) {
-    .card {
+    /* .card {
         width: 35%;
         min-height: 94dvh;
-    }
-
-    .first-container {
-        max-width: 90%;
-    }
+    } */
 
     .option {
         font-size: 1rem;
@@ -383,19 +372,13 @@ input[type="radio"] {
         width: 82%;
     }
 
-
-    h3 {
-        font-size: 22px;
-        margin-bottom: -16px;
-    }
-
-    h1 {
+    /* h1 {
         font-size: 2.3rem;
-    }
+    } */
 
-    h2 {
+    /* h2 {
         font-size: 20px;
-    }
+    } */
 
     p {
         font-size: 20px;
@@ -409,11 +392,6 @@ input[type="radio"] {
         width: 98%;
     }
 
-    button {
-        font-size: 24px;
-        padding: 7px 30px;
-    }
-
 
     .final-text {
         font-size: 30px;
@@ -425,9 +403,9 @@ input[type="radio"] {
         margin-bottom: 5px;
     }
 
-    .mindful-heading {
+    /* .mindful-heading {
         font-size: 40px;
-    }
+    } */
 
     .bottom-section {
         font-size: 20px;
@@ -439,32 +417,32 @@ input[type="radio"] {
     }
 }
 
-@media (max-width: 1024px)
- {
+@media (max-width: 1024px) {
 
     .card {
         max-width: 60%;
         width: 50%;
     }
 
+    /* 
     h1 {
         font-size: 30px;
         max-width: 50%;
         width: 100%;
-    }
+    } */
 
-    h2 {
+    /* h2 {
         max-width: 75%;
         width: 100%;
         font-size: 1.3rem;
         margin: 5% 0;
-    }
+    } */
 
-    .subtext {
+    /* .subtext {
         max-width: 40%;
         width: 100%;
         font-size: 16px;
-    }
+    } */
 
     button {
         font-size: 20px;
@@ -499,12 +477,12 @@ input[type="radio"] {
         padding: 10px 25px;
     }
 
-    small {
+    /* small {
         max-width: 77%;
         width: 100%;
         font-size: 18px;
         margin-bottom: -10px;
-    }
+    } */
 
     p {
         font-size: 20px;
@@ -520,12 +498,12 @@ input[type="radio"] {
         background-color: #e0d281;
     }
 
-    .final-text {
+    /* .final-text {
         max-width: 60%;
         width: 100%;
         font-size: 30px;
         margin-bottom: 0px;
-    }
+    } */
 
     label {
         font-size: 16px !important;
@@ -557,20 +535,21 @@ input[type="radio"] {
         padding-left: 20px;
     }
 
-    .mindful-heading {
-        max-width: 48%;
-        width: 100%;
-        font-size: 30px;
+    /* .mindful-heading { */
+    /* max-width: 48%;
+        width: 100%; */
+    /* font-size: 30px;
         font-weight: 700;
         line-height: 110%;
-    }
+    } */
 
     #details-form input {
         padding: 5px 0px;
     }
-        #details-form label{
+
+    #details-form label {
         font-size: 16px !important;
-        }
+    }
 
 
 }
@@ -578,35 +557,41 @@ input[type="radio"] {
 @media (max-width: 768px),
 (max-width: 500px),
 (max-width: 600px) {
+    .card {
+        max-width: 100%;
+        width: 100%;
+        min-height: 92dvh;
+    }
 
-    h1 {
+    /* h1 {
         max-width: 75%;
         width: 100%;
         font-size: 30px;
-    }
+    } */
 
-    .subtext {
+    /* .subtext {
         max-width: 60%;
         width: 100%;
         font-size: 16px;
-    }
+    } */
 
     small {
         font-size: 16px;
     }
 
     .final-text {
-        max-width: 75%;
+        /* max-width: 75%;
         width: 100%;
         font-size: 28px;
-        margin-bottom: 0px;
+        margin-bottom: 0px; */
     }
 
+    /* 
     .mindful-heading {
         font-size: 28px;
         max-width: 58%;
         width: 100%;
-    }
+    } */
 
     p {
         font-size: 18px;
@@ -618,51 +603,47 @@ input[type="radio"] {
     .card {
         max-width: 100%;
         width: 100%;
+        min-height: 92dvh;
     }
 
     h1 {
-        font-size: 26px;
-        /* margin-top: 2% 0; */
-        max-width: 75%;
-        width: 100%;
-        line-height: 34px;
+        font-size: 36px;
+        margin-bottom: 8px;
     }
 
     small {
-        font-size: 16px;
-        margin-bottom: -16px;
+        font-size: 18px;
+        margin-bottom: -24px;
+        padding-bottom: 3%;
     }
 
     .subtext {
-        max-width: 56%;
-        width: 100%;
-        font-size: 16px;
+        font-size: 22px;
+        padding-top: 3%;
     }
 
     h2 {
-        max-width: 73%;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         margin-bottom: 1rem;
     }
 
+    P {
+        font-size: 21px;
+    }
+
     .mindful-heading {
-        max-width: 58%;
-        width: 100%;
-        font-size: 30px;
-        font-weight: 700;
-        line-height: 110%;
+        font-size: 38px;
+        line-height: 38px;
     }
 
     .final-text {
-        max-width: 70%;
-        width: 100%;
-        font-size: 26px;
+        font-size: 30px;
         margin-bottom: 0px;
-        line-height: 124%;
+        line-height: 110%;
     }
 
     #details-form {
-        width: 70%;
+        width: 100%;
     }
 
     #details-form label {
@@ -690,17 +671,24 @@ input[type="radio"] {
         margin-bottom: 0px;
     }
 
+    .step {
+        font-size: 1.5rem;
+        padding-bottom: 5%;
+    }
+
+    label {
+        font-size: 18px !important;
+    }
+
     .option {
-        width: 300px;
-        margin: 12px 0;
-        padding: 0px 10px;
-        font-size: 18px;
+        font-size: 18px !important;
         padding-left: 20px;
     }
 
     .help-text {
         font-size: 1rem;
         margin: 0px;
+        padding-bottom: 5px;
     }
 
     .line {
@@ -710,5 +698,9 @@ input[type="radio"] {
     #form-submit {
         font-size: 1.125rem;
         margin-top: 5.25rem;
+    }
+
+    .footer {
+        font-size: 18px;
     }
 }
