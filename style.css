@@ -560,7 +560,7 @@ input[type="radio"] {
     .card {
         max-width: 70%;
         width: 100%;
-        min-height: 92dvh;
+        min-height: 90dvh;
     }
 
     /* h1 {
