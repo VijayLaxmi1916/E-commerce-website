@@ -67,14 +67,11 @@ function validateFormFields() {
 
   fields.forEach(field => {
     const input = document.getElementById(field.id);
-    if (input && input.value.trim() === '') {
+    if (input && input.value.trim() !== '') {
       hasError = true;
 
       const error = document.createElement('div');
       error.className = 'error-msg';
-      // error.style.color = 'red';
-      // error.style.fontSize = '12px';
-      // error.style.marginTop = '4px';
       error.textContent = field.message;
 
       input.insertAdjacentElement('afterend', error);
@@ -108,9 +105,10 @@ document.querySelector('.card')?.addEventListener('click', (e) => {
   const currentId = steps[currentStepIndex];
 
   if (currentId === 'form-screen') {
-    if (validateFormFields()) {
-      showStep(5);
-    }
+    // if (validateFormFields()) {
+      
+    // }
+    showStep(5);
   } else if (currentId === 'mindful-screen') {
     showStep(6);
   } else if (currentId === 'last-post-screen') {
