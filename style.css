@@ -189,9 +189,10 @@ button {
 button:hover {
     background-color: #e0d281;
 }
-button:active {
-  background-color: #d6c157; /* Darker shade to show it's pressed */
-  transform: scale(0.97); /* Slight shrink to give pressed feel */
+#start-btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(18px);
 }
 .mindful-heading {
     max-width: 56%;

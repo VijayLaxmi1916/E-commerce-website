@@ -22,7 +22,9 @@ function showStep(index) {
 // Start button
 document.getElementById('start-btn')?.addEventListener('click', (e) => {
   e.stopPropagation();
-  showStep(1);
+  setTimeout(() => {
+    showStep(1);
+  }, 1000);
 });
 
 // Auto next when clicking option (q1 to q3)
