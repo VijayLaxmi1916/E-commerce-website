@@ -65,18 +65,18 @@ function validateFormFields() {
     { id: 'email', message: 'Please enter your email' }
   ];
 
-  fields.forEach(field => {
-    const input = document.getElementById(field.id);
-    if (input && input.value.trim() !== '') {
-      hasError = true;
+  // fields.forEach(field => {
+  //   const input = document.getElementById(field.id);
+  //   if (input && input.value.trim() !== '') {
+  //     hasError = true;
 
-      const error = document.createElement('div');
-      error.className = 'error-msg';
-      error.textContent = field.message;
+  //     const error = document.createElement('div');
+  //     error.className = 'error-msg';
+  //     error.textContent = field.message;
 
-      input.insertAdjacentElement('afterend', error);
-    }
-  });
+  //     input.insertAdjacentElement('afterend', error);
+  //   }
+  // });
 
   return !hasError;
 }

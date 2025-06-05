@@ -424,12 +424,52 @@ input[type="radio"] {
         width: 50%;
     }
 
-    /* 
+
     h1 {
+        font-size: 46px;
+    }
+
+    small {
+        font-size: 20px !important;
+    }
+
+    .subtext {
         font-size: 30px;
-        max-width: 50%;
-        width: 100%;
-    } */
+        padding-top: 3%;
+    }
+
+    button {
+        font-size: 30px !important;
+        padding: 12px 30px;
+    }
+
+    .footer {
+        font-size: 24px !important;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .step {
+        font-size: 34px !important;
+    }
+
+    .option {
+        width: 380px !important;
+        font-size: 29px !important;
+    }
+
+    .final-text {
+        font-size: 44px;
+    }
+
+    #details-form {
+        width: 80% !important;
+    }
+        #details-form label{
+        font-size: 20px !important;
+        }
 
     /* h2 {
         max-width: 75%;
@@ -468,10 +508,6 @@ input[type="radio"] {
         padding: 0px 3px;
     }
 
-    #details-form {
-        width: 80%;
-    }
-
     button {
         font-size: 22px;
         padding: 10px 25px;
@@ -504,11 +540,6 @@ input[type="radio"] {
         font-size: 30px;
         margin-bottom: 0px;
     } */
-
-    label {
-        font-size: 16px !important;
-        margin-bottom: 0px;
-    }
 
     #details-form {
         width: 60%;
@@ -545,10 +576,6 @@ input[type="radio"] {
 
     #details-form input {
         padding: 5px 0px;
-    }
-
-    #details-form label {
-        font-size: 16px !important;
     }
 
 
