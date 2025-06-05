@@ -354,7 +354,9 @@ input[type="radio"] {
     .card {
         max-width: 80%;
         width: 100%;
-        min-height: 90dvh;
+    }
+    p{
+        font-size: 24px;
     }
 }
 
