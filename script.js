@@ -65,18 +65,6 @@ function validateFormFields() {
     { id: 'email', message: 'Please enter your email' }
   ];
 
-  // fields.forEach(field => {
-  //   const input = document.getElementById(field.id);
-  //   if (input && input.value.trim() !== '') {
-  //     hasError = true;
-
-  //     const error = document.createElement('div');
-  //     error.className = 'error-msg';
-  //     error.textContent = field.message;
-
-  //     input.insertAdjacentElement('afterend', error);
-  //   }
-  // });
 
   return !hasError;
 }
@@ -90,12 +78,6 @@ if (phoneInput) {
 }
 
 
-// Handle "SHOW ME" button click
-// "SHOW ME" button
-// document.getElementById('form-submit')?.addEventListener('click', function (e) {
-//   e.stopPropagation();
-//   showStep(5); // mindful screen
-// });
 
 // // Entire card click (handles all steps)
 document.querySelector('.card')?.addEventListener('click', (e) => {
