@@ -532,7 +532,7 @@ input[type="radio"] {
 
     /* #form-submit:hover {
         background-color: #e0d281; */
-    }
+    /* } */
 
     /* .final-text {
         max-width: 60%;
@@ -564,7 +564,7 @@ input[type="radio"] {
         padding: 0px 10px;
         font-size: 18px;
         padding-left: 20px; */
-    }
+ 
 
     /* .mindful-heading { */
     /* max-width: 48%;
@@ -579,7 +579,7 @@ input[type="radio"] {
     } */
 
 
-}
+
 
 @media (max-width: 768px),
 (max-width: 500px),
