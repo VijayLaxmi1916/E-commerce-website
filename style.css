@@ -356,7 +356,7 @@ input[type="radio"] {
         min-height: 94dvh;
     } */
 
-    .option {
+    /* .option {
         font-size: 1rem;
         padding: 0px;
         padding-left: 1.25rem;
@@ -370,7 +370,7 @@ input[type="radio"] {
 
     .img-2 {
         width: 82%;
-    }
+    } */
 
     /* h1 {
         font-size: 2.3rem;
@@ -379,7 +379,7 @@ input[type="radio"] {
     /* h2 {
         font-size: 20px;
     } */
-
+/* 
     p {
         font-size: 20px;
     }
@@ -401,12 +401,12 @@ input[type="radio"] {
     #details-form label {
         font-size: 18px !important;
         margin-bottom: 5px;
-    }
+    } */
 
     /* .mindful-heading {
         font-size: 40px;
     } */
-
+/* 
     .bottom-section {
         font-size: 20px;
     }
@@ -415,11 +415,11 @@ input[type="radio"] {
         font-size: 20px;
         margin: 0px;
     }
-}
+} */
 
 @media (max-width: 1024px) {
 
-    .card {
+    /* .card {
         max-width: 60%;
         width: 50%;
     }
@@ -469,7 +469,7 @@ input[type="radio"] {
     }
         #details-form label{
         font-size: 20px !important;
-        }
+        } */
 
     /* h2 {
         max-width: 75%;
@@ -484,7 +484,7 @@ input[type="radio"] {
         font-size: 16px;
     } */
 
-    button {
+    /* button {
         font-size: 20px;
 
     }
@@ -510,7 +510,7 @@ input[type="radio"] {
 
     button {
         font-size: 22px;
-        padding: 10px 25px;
+        padding: 10px 25px; */
     }
 
     /* small {
@@ -520,18 +520,18 @@ input[type="radio"] {
         margin-bottom: -10px;
     } */
 
-    p {
+    /* p {
         font-size: 20px;
         margin-top: -10px;
+    } */
+
+
+    /* p.step {
+        margin-bottom: -16px; */
     }
 
-
-    p.step {
-        margin-bottom: -16px;
-    }
-
-    #form-submit:hover {
-        background-color: #e0d281;
+    /* #form-submit:hover {
+        background-color: #e0d281; */
     }
 
     /* .final-text {
@@ -540,30 +540,30 @@ input[type="radio"] {
         font-size: 30px;
         margin-bottom: 0px;
     } */
-
+/* 
     #details-form {
         width: 60%;
-    }
-
+    } */
+/* 
     #details-form input {
         font-size: 12px;
         width: 100%;
         padding: 0px 0px;
         margin: 0px 0 0px 0;
-    }
+    } */
 
-    #form-submit {
+    /* #form-submit {
         font-size: 18px;
         padding: 12px 15px;
         margin-top: 60px;
-    }
+    } */
 
-    .option {
+    /* .option {
         margin: 12px 0;
         width: 300px;
         padding: 0px 10px;
         font-size: 18px;
-        padding-left: 20px;
+        padding-left: 20px; */
     }
 
     /* .mindful-heading { */
@@ -574,9 +574,9 @@ input[type="radio"] {
         line-height: 110%;
     } */
 
-    #details-form input {
+    /* #details-form input {
         padding: 5px 0px;
-    }
+    } */
 
 
 }
@@ -602,16 +602,16 @@ input[type="radio"] {
         font-size: 16px;
     } */
 
-    small {
-        font-size: 16px;
+    /* small {
+        font-size: 16px; */
     }
 
-    .final-text {
+    /* .final-text { */
         /* max-width: 75%;
         width: 100%;
         font-size: 28px;
         margin-bottom: 0px; */
-    }
+  
 
     /* 
     .mindful-heading {
@@ -620,11 +620,11 @@ input[type="radio"] {
         width: 100%;
     } */
 
-    p {
+    /* p {
         font-size: 18px;
         margin-top: -10px;
     }
-}
+} */
 
 @media screen and (max-width: 425px) {
     .card {
@@ -634,7 +634,7 @@ input[type="radio"] {
     }
 
     h1 {
-        font-size: 36px;
+        font-size: 34px;
         margin-bottom: 8px;
     }
 
@@ -645,12 +645,12 @@ input[type="radio"] {
     }
 
     .subtext {
-        font-size: 22px;
+        font-size: 20px;
         padding-top: 3%;
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         margin-bottom: 1rem;
     }
 
@@ -659,7 +659,7 @@ input[type="radio"] {
     }
 
     .mindful-heading {
-        font-size: 38px;
+        font-size: 34px;
         line-height: 38px;
     }
 
@@ -704,13 +704,13 @@ input[type="radio"] {
     }
 
     label {
-        font-size: 18px !important;
+        font-size: 16px !important;
     }
 
-    .option {
+    /* .option {
         font-size: 18px !important;
         padding-left: 20px;
-    }
+    } */
 
     .help-text {
         font-size: 1rem;
@@ -728,6 +728,14 @@ input[type="radio"] {
     }
 
     .footer {
-        font-size: 18px;
+        font-size: 14px !important;
+    }
+    .bbc {
+        font-size: 20px;
+        padding: -1px 3px;
+    }
+    .option{
+        width: 22rem;
+        height: 2rem;
     }
 }
